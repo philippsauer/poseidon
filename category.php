@@ -12,10 +12,11 @@ get_header();
 // Get Theme Options from Database.
 $theme_options = poseidon_theme_options();
 
-// Retrieve related page by tag slug
-$page = get_page_by_path( "/tag/".get_query_var('tag') );
+// Retrieve related page by category slug
+$category = get_category( get_query_var( 'cat' ) );
+$page = get_page_by_path( $category->slug );
 
-// in case there is a content page for the current tag render it in the top area
+// in case there is a content page for the current category render it in the top area
 if ( $page && $page->post_status == 'publish') : ?>
 
 	<section id="primary" class="fullwidth-content-area content-area">
@@ -62,7 +63,6 @@ if ( $page && $page->post_status == 'publish') : ?>
 
 	<section id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
 		<?php
 		if ( have_posts() ) : ?>
 
@@ -97,4 +97,5 @@ if ( $page && $page->post_status == 'publish') : ?>
 	<?php get_sidebar(); ?>
 
 <?php endif; ?>
+
 <?php get_footer(); ?>
