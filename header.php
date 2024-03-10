@@ -58,4 +58,11 @@
 
 		<?php poseidon_breadcrumbs(); ?>
 
+		<!-- rankmath breadcrumbs -->
+		<?php if (function_exists('rank_math_the_breadcrumbs')) : ?>
+			<div class="breadcrumbs-container container clearfix">
+				<?php rank_math_the_breadcrumbs(); ?>
+			</div>
+		<?php endif; ?>
+		
 		<div id="content" class="site-content container clearfix">
