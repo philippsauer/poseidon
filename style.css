@@ -808,7 +808,8 @@ textarea {
 }
 
 .site-content {
-	padding-top: 3em;
+	/* custom: padding-top not required due to breadcrumbs */
+	padding-top: 0; 
 	background-color: #fff;
 	background-color: var(--page-background-color);
 }
@@ -3513,10 +3514,6 @@ html[xmlns] .zeeflexslider .zeeslides {
 # - Media Queries for Layout
 --------------------------------------------------------------*/
 @media only screen and (max-width: 80em) {
-	.site-content {
-		padding-top: 2em;
-	}
-
 	.content-area {
 		padding-right: 3em;
 	}
