@@ -29,28 +29,48 @@
 }
 
 /* Small Header */
-.sticky-header.small-header .site-header .site-branding,
-.sticky-header.small-header .primary-navigation,
-.sticky-header.small-header .primary-menu-toggle {
-	margin-top: 0;
-	margin-bottom: 0;
-	transition: all 0.4s ease;
+@mixin small-header {
+	.site-header .site-branding,
+	.primary-navigation,
+	.primary-menu-toggle {
+		margin-top: 0;
+		margin-bottom: 0;
+		transition: all 0.4s ease;
+	}
+	.site-header .site-branding .site-title {
+		margin: 0;
+		font-size: 24px;
+		font-size: 1.5rem;
+		margin: .4em 0;
+	}
+	
+	.site-header .site-branding .custom-logo {
+		margin-top: .75em;
+		max-height: 30px;
+		width: auto;
+		box-shadow: none;
+		border-radius: 8px;
+	}
+	
+	.site-header .site-description {
+		display: none;
+	}	
 }
 
-.sticky-header.small-header .site-header .site-branding .site-title {
-	margin: 0;
-	font-size: 28px;
-	font-size: 1.75rem;
+body.sticky-header {
+	padding-top: 107px;
 }
 
-.sticky-header.small-header .site-header .site-branding .custom-logo {
-	margin-top: 1em;
-	max-height: 25px;
-	width: auto;
+body.small-header.sticky-header {
+
+	@include small-header;
 }
 
-.sticky-header.small-header .site-header .site-description {
-	display: none;
+@media only screen and (max-width: 60em) {
+	body.sticky-header {
+		padding-top: 58px;
+		@include small-header;
+	}
 }
 
 @media only screen and (max-width: 60em) {

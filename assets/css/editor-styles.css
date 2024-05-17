@@ -56,8 +56,8 @@
 	--navi-font-weight: bold;
 	--widget-title-font-weight: bold;
 	--title-text-transform: none;
-	--navi-text-transform: uppercase;
-	--widget-title-text-transform: uppercase;
+	--navi-text-transform: none;
+	--widget-title-text-transform: none;
 	--text-line-height: 1.5;
 	--title-line-height: 1.5;
 }
@@ -530,7 +530,7 @@ p.has-background {
 	font-family: var(--widget-title-font);
 	font-weight: 700;
 	font-weight: var(--widget-title-font-weight);
-	text-transform: uppercase;
+	text-transform: none;
 	text-transform: var(--widget-title-text-transform);
 	transition: all 0.2s ease;
 }
@@ -806,7 +806,7 @@ div.wp-block-columns {
 	font-family: var(--widget-title-font);
 	font-weight: 700;
 	font-weight: var(--widget-title-font-weight);
-	text-transform: uppercase;
+	text-transform: none;
 	text-transform: var(--widget-title-text-transform);
 	line-height: 1.5;
 	line-height: var(--title-line-height);
@@ -963,7 +963,7 @@ div.wp-block-columns {
 # - Plugins
 --------------------------------------------------------------*/
 :root {
-	--tz-column-gap: 2em;
+	--tz-column-gap: 1em;
 }
 
 .tz-magazine-block .tz-entry-title {

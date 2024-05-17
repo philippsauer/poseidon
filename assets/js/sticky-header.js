@@ -19,7 +19,6 @@
 
 		var body = $( 'body' ),
 			top_position = $( this ).offset().top - body.offset().top - 1,
-			header_height = $( this ).height() + top_position,
 			small_header = top_position + 70;
 
 		var makeSticky = function() {
@@ -29,12 +28,10 @@
 			if ( window_top > top_position ) {
 
 				body.addClass( 'sticky-header' );
-				body.css( 'padding-top', header_height + 'px' );
 
 			} else {
 
 				body.removeClass( 'sticky-header' );
-				body.css( 'padding-top', '0' );
 
 			}
 
