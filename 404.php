@@ -24,14 +24,10 @@ get_header(); ?>
 					<?php get_search_form(); ?>
 
 					<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
-
-					<?php the_widget( 'WP_Widget_Archives', 'dropdown=1' ); ?>
-					
-					<?php the_widget( 'WP_Widget_Categories', 'dropdown=1' ); ?>
+			
+					<?php the_widget( 'WP_Widget_Categories' ); ?>
 
 					<?php the_widget( 'WP_Widget_Tag_Cloud' ); ?>
-					
-					<?php the_widget( 'WP_Widget_Pages' ); ?>
 
 				</div>
 				
