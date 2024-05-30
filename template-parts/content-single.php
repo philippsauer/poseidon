@@ -31,7 +31,7 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-
+		<h3 id="reply-title" class="comment-reply-title"><span>Schlagwörter</span></h3>
 		<?php poseidon_entry_tags(); ?>
 		<?php do_action( 'poseidon_author_bio' ); ?>
 		<?php poseidon_post_navigation(); ?>

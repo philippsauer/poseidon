@@ -20,11 +20,10 @@ if ( $page && $page->post_status == 'publish') : ?>
 
 	<section id="primary" class="fullwidth-content-area content-area">
 		
-		<header class="page-header">
-
-			<?php echo '<h1>' . apply_filters('the_title', $page->post_title) . '</h1>'; ?>
+		<header class="page-header">	
+			<?php echo '<h1 class="entry-title">' . apply_filters('the_title', $page->post_title) . '</h1>'; ?>
 			<?php echo apply_filters('the_content', $page->post_content); ?>
-
+			
 		</header><!-- .page-header -->
 
 		<section id="primary" class="content-area">

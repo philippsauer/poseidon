@@ -71,17 +71,8 @@ if ( ! function_exists( 'poseidon_header_image' ) ) :
 		// Get theme options from database.
 		$theme_options = poseidon_theme_options();
 
-		// Display featured image as header image on static pages.
-		if ( is_page() && has_post_thumbnail() ) :
-			?>
-
-			<div id="headimg" class="header-image featured-image-header">
-				<?php the_post_thumbnail( 'poseidon-header-image' ); ?>
-			</div>
-
-			<?php
-			// Display header image on single posts.
-		elseif ( is_single() && has_post_thumbnail() && 'header' == $theme_options['post_layout_single'] ) :
+		// Display header image on single posts.
+		if ( is_single() && has_post_thumbnail() && 'header' == $theme_options['post_layout_single'] ) :
 			?>
 
 			<div id="headimg" class="header-image featured-image-header">
@@ -319,6 +310,7 @@ if ( ! function_exists( 'poseidon_entry_tags' ) ) :
 
 		// Get tags.
 		$tag_list = get_the_tag_list( '', '' );
+		$tag_list .= get_the_category_list( ' ' );
 
 		// Display tags.
 		if ( $tag_list ) :

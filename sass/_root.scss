@@ -32,7 +32,6 @@
 	@include variable(--page-border-color, $themeColors);
 	@include variable(--header-background-color, $themeColors);
 	@include variable(--site-title-color, $themeColors);
-	@include variable(--site-title-hover-color, $themeColors);
 
 	// Navigation
 	@include variable(--navi-color, $themeColors);

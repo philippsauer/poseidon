@@ -44,7 +44,6 @@ $themeColors: (
 	--page-border-color              : rgba(0, 0, 0, 0.12),
 	--header-background-color        : #fff,
 	--site-title-color               : #404040,
-	--site-title-hover-color         : #22aadd,
 
 	// Header Bar (Pro Version)
 	--header-bar-background-color    : #404040,
@@ -100,8 +99,8 @@ $fontWeight: (
 // Text Transform.
 $textTransform: (
 	--title-text-transform: none,
-	--navi-text-transform: none,
-	--widget-title-text-transform: none,
+	--navi-text-transform: uppercase,
+	--widget-title-text-transform: uppercase,
 );
 
 // Line Height.

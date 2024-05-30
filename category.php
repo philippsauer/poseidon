@@ -23,7 +23,7 @@ if ( $page && $page->post_status == 'publish') : ?>
 		
 		<header class="page-header">
 
-			<?php echo '<h1>' . apply_filters('the_title', $page->post_title) . '</h1>'; ?>
+			<?php echo '<h1 class="entry-title">' . apply_filters('the_title', $page->post_title) . '</h1>'; ?>
 			<?php echo apply_filters('the_content', $page->post_content); ?>
 
 		</header><!-- .page-header -->

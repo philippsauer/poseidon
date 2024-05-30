@@ -1,16 +1,25 @@
 /* Read more Link */
 .more-link {
 	display: inline-block;
-	margin: 0;
-	padding: 0;
 	text-decoration: none;
 	@include font-size(14);
 	@include font-family(--widget-title-font);
 	@include font-weight(--widget-title-font-weight);
 	@include text-transform(--widget-title-text-transform);
 	transition: all 0.2s ease;
+	background-color: var(--button-color);
+    color: var(--button-text-color);
+    margin: 0;
+    padding: .75em 1.5em;
+    border-radius: 6px;
+	&:hover, &:focus, &:active {
+		background-color: var(--button-hover-color);
+    	color: var(--button-hover-text-color);
+	}
+
 }
 
-.entry-content .more-link {
+.entry-content a.more-link {
 	text-decoration: none;
+	color: var(--button-text-color);
 }

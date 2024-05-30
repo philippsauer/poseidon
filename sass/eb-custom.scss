@@ -1,0 +1,103 @@
+/* Global Custom Classes */
+.list-unstyled{
+  padding-left: 0;
+  list-style: none;
+}
+.mt-n3{
+margin-top: -50px !important;
+}
+.mt-n2{
+margin-top: -30px;
+}
+.mt-n1{
+margin-top: -15px;
+}
+.mt-0{
+margin-top: 0;
+}
+.mt-1{
+margin-top: 15px;
+}
+.mt-2{
+margin-top: 30px;
+}
+.mb-0{
+margin-bottom: 0;
+}
+.mb-1{
+margin-bottom: 15px;
+}
+.mb-2{
+margin-bottom: 30px;
+}
+.b-none{
+border: none;
+}
+.full-width {
+	margin-right: calc(50% - 50vw);
+  margin-left: calc(50% - 50vw);
+}
+
+/* Homepage Teaser */
+.eb-full-width-teaser{
+  margin-top: -3em !important;
+  margin-right: calc(50% - 50vw);
+  margin-left: calc(50% - 50vw);
+  max-width: none;
+  max-height: 400px;
+  overflow: hidden;
+  img {
+    width:100vw;
+  }
+}
+
+/* Homepage Breadcrumbs */
+.home .rank-math-breadcrumb{
+	display:none;
+}
+
+/* Mobile Adjustments (show all button)*/
+@media (max-width: 781px) {
+	.eb-responsive-button {
+		align-self: start !important;
+	}
+}
+
+/* Customize Wordpress Excerpts (for Toplists etc.)*/
+h1.wp-block-post-title,
+h2.wp-block-post-title,
+h3.wp-block-post-title,
+h4.wp-block-post-title{
+  margin-top: 0;
+}
+
+.wp-block-post-excerpt__more-link {
+	background-color: var(--button-color);
+  color: var(--button-text-color) !important;
+  padding: .75em 1.5em;
+  margin-top: 1em;
+  text-decoration: none;
+  border-radius: 6px;
+  &:hover, &:focus, &:active {
+    background-color: var(--button-hover-color);
+    color: var(--button-hover-text-color);
+  }
+}
+
+.eb-block-tile{
+  padding: 1.5em !important;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, .15);
+  &:hover{
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, .15);
+  }
+}
+
+.scroll-to-top-button {
+  border-radius: 12px;
+  box-shadow: 0 .5rem 1rem #00000026
+}
+
+/* Rankmath breadcrumbs separator*/
+span.separator{
+  padding: .5em;
+}

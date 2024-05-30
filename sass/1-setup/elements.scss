@@ -69,8 +69,9 @@ hr {
 
 ul,
 ol {
-	margin: 1.5em 0;
-	padding: 0 0 0 1.25em;
+	margin: auto;
+	padding: auto;
+	list-style: unset;
 }
 
 ul {
@@ -80,7 +81,9 @@ ul {
 ol {
 	list-style: decimal;
 }
-
+li {
+    margin-top: 10px;
+}
 li > ul,
 li > ol {
 	margin-bottom: 0;
@@ -98,6 +101,7 @@ dd {
 img {
 	max-width: 100%; /* Adhere to container width. */
 	height: auto; /* Make sure images are scaled correctly. */
+	border-radius: 5px;
 }
 
 table {
