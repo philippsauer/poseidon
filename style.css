@@ -95,8 +95,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	--widget-title-color: #404040;
 	--widget-title-hover-color: #22aadd;
 	--widget-title-border-color: #eee;
-	--footer-background-color: #fff;
-	--footer-text-color: #404040;
+	--footer-background-color: #262626;
+	--footer-text-color: #fff;
 	--footer-link-color: #22aadd;
 	--footer-link-hover-color: #404040;
 	--text-font: "Ubuntu", arial, helvetica, sans-serif;
@@ -2558,9 +2558,9 @@ figcaption,
 	border-top: 1px solid;
 	border-color: rgba(0, 0, 0, 0.12);
 	border-color: var(--page-border-color);
-	color: #404040;
+	color: #fff;
 	color: var(--footer-text-color);
-	background-color: #fff;
+	background-color: #262626;
 	background-color: var(--footer-background-color);
 }
 
@@ -2570,7 +2570,8 @@ figcaption,
 }
 
 .site-footer .site-info {
-	float: left;
+	float: none;
+	text-align: center;
 	padding: 2em 0;
 }
 
@@ -3535,13 +3536,6 @@ html[xmlns] .zeeflexslider .zeeslides {
 	}
 }
 
-@media only screen and (max-width: 60em) {
-	.site-footer .site-info {
-		float: none;
-		text-align: center;
-	}
-}
-
 @media only screen and (max-width: 55em) {
 	.content-area,
 	.site-content .fullwidth-content-area {
@@ -4176,4 +4170,13 @@ h4.wp-block-post-title {
 /* Rankmath breadcrumbs separator*/
 span.separator {
 	padding: 0.5em;
+}
+
+/* footer-widgets */
+#footer-widgets .widget ul {
+	list-style: none;
+}
+
+#footer-widgets .widget ul li a {
+	text-decoration: none;
 }

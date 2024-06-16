@@ -101,3 +101,11 @@ h4.wp-block-post-title{
 span.separator{
   padding: .5em;
 }
+
+/* footer-widgets */
+#footer-widgets .widget ul {
+    list-style: none;
+    li a {
+      text-decoration: none;
+    }
+} 
